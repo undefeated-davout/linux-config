@@ -1,4 +1,11 @@
 
+# ubuntu用Git補完設定
+source /usr/share/bash-completion/completions/git
+
+# エイリアス
+alias ll='ls -lahF'
+alias lt='ls -lahFtr'
+
 # 出力の後に改行を入れる
 function add_line {
   if [[ -z "${PS1_NEWLINE_LOGIN}" ]]; then
