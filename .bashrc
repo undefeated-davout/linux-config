@@ -7,7 +7,7 @@ source /usr/share/bash-completion/completions/git
 
 # エイリアス
 alias ll='ls -lahF'
-alias lt='ls -lahFtr'
+alias lr='ls -lahFtr'
 
 # 出力の後に改行を入れる
 function add_line {
