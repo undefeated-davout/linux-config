@@ -1,6 +1,9 @@
 
-# ubuntu用Git補完設定
+# Ubuntu用Git補完設定
 source /usr/share/bash-completion/completions/git
+# Mac用Git補完設定
+# source /usr/local/Cellar/git/2.21.0/etc/bash_completion.d/git-prompt.sh
+# source /usr/local/Cellar/git/2.21.0/etc/bash_completion.d/git-completion.bash
 
 # エイリアス
 alias ll='ls -lahF'
