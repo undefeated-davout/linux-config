@@ -2,4 +2,3 @@
 
 sleep 5
 brew services restart yabai
-
