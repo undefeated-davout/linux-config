@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
 
-sleep 5
+sleep 10
 brew services restart yabai
