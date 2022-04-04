@@ -5,9 +5,10 @@ yabai -m rule --add app="^スティッキーズ$" manage=off
 yabai -m rule --add app='^システム環境設定$' manage=off layer=above
 yabai -m rule --add app='^システム情報$' manage=off layer=above
 yabai -m rule --add app='App Store' manage=off layer=above
+yabai -m rule --add app='^アクティビティモニタ$' manage=off
 yabai -m rule --add app='^Sourcetree$' manage=off
 yabai -m rule --add app='^計算機$' manage=off
-yabai -m rule --add app='^アクティビティモニタ$' manage=off
+yabai -m rule --add app='^MySQLWorkbench$' manage=off
 
 # global settings
 yabai -m config mouse_follows_focus          off
