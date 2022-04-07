@@ -1,52 +1,50 @@
 # focus window
-alt - x : yabai -m window --focus recent
-alt - h : yabai -m window --focus west
-alt - j : yabai -m window --focus south
-alt - k : yabai -m window --focus north
-alt - l : yabai -m window --focus east
-alt - z : yabai -m window --focus stack.prev
-alt - c : yabai -m window --focus stack.next
+alt - b : yabai -m window --focus west
+alt - n : yabai -m window --focus south
+alt - p : yabai -m window --focus north
+alt - f : yabai -m window --focus east
 
 # swap window
-shift + alt - x : yabai -m window --swap recent
-shift + alt - h : yabai -m window --swap west
-shift + alt - j : yabai -m window --swap south
-shift + alt - k : yabai -m window --swap north
-shift + alt - l : yabai -m window --swap east
+shift + alt - b : yabai -m window --swap west
+shift + alt - n : yabai -m window --swap south
+shift + alt - p : yabai -m window --swap north
+shift + alt - f : yabai -m window --swap east
 
 # move window
-shift + cmd - h : yabai -m window --warp west
-shift + cmd - j : yabai -m window --warp south
-shift + cmd - k : yabai -m window --warp north
-shift + cmd - l : yabai -m window --warp east
+shift + cmd - b : yabai -m window --warp west
+shift + cmd - n : yabai -m window --warp south
+shift + cmd - p : yabai -m window --warp north
+shift + cmd - f : yabai -m window --warp east
 
-# alias
+# サイズ調整
 alt - left  : yabai -m window --resize left:-40:0  || yabai -m window --resize right:-40:0
 alt - right : yabai -m window --resize right:40:0  || yabai -m window --resize left:40:0
 alt - up    : yabai -m window --resize top:0:-40   || yabai -m window --resize bottom:0:-40
 alt - down  : yabai -m window --resize bottom:0:40 || yabai -m window --resize top:0:40
 
-# rotate tree
-alt - r : yabai -m space --rotate 90
+# 時計回りに回転
+alt - r : yabai -m space --rotate -90
 
-# mirror tree y-axis
-alt - y : yabai -m space --mirror y-axis
+# 左右入れ替え
+alt - x : yabai -m space --mirror y-axis
 
-# mirror tree x-axis
-alt - x : yabai -m space --mirror x-axis
+# 上下入れ替え
+alt - y : yabai -m space --mirror x-axis
 
-# toggle desktop offset
-alt - a : yabai -m space --toggle padding && yabai -m space --toggle gap
+# フルスクリーン
+alt - m : yabai -m window --toggle zoom-fullscreen
 
-# toggle window fullscreen zoom
-alt - f : yabai -m window --toggle zoom-fullscreen
-
-# toggle window native fullscreen
-shift + alt - f : yabai -m window --toggle native-fullscreen
-
-# toggle window split type
+# 分割方式変更
 alt - e : yabai -m window --toggle split
 
-# float / unfloat window and restore position
-# alt - t : yabai -m window --toggle float && /tmp/yabai-restore/$(yabai -m query --windows --window | jq -re '.id').restore 2>/dev/null || true
-alt - t : yabai -m window --toggle float && yabai -m window --grid 4:4:1:1:2:2
+# 分割バランス
+shift + alt - 0 : yabai -m space --balance
+
+# 次のディスプレイへフォーカス移動
+alt - z : yabai -m display --focus prev
+alt - c : yabai -m display --focus next
+
+# 指定のディスプレイ番号へフォーカス移動
+cmd - 1 : yabai -m display --focus 1
+cmd - 2 : yabai -m display --focus 2
+cmd - 3 : yabai -m display --focus 3
