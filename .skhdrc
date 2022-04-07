@@ -11,10 +11,10 @@ shift + alt - p : yabai -m window --swap north
 shift + alt - f : yabai -m window --swap east
 
 # move window
-shift + cmd - b : yabai -m window --warp west
-shift + cmd - n : yabai -m window --warp south
-shift + cmd - p : yabai -m window --warp north
-shift + cmd - f : yabai -m window --warp east
+# shift + cmd - b : yabai -m window --warp west
+# shift + cmd - n : yabai -m window --warp south
+# shift + cmd - p : yabai -m window --warp north
+# shift + cmd - f : yabai -m window --warp east
 
 # サイズ調整
 alt - left  : yabai -m window --resize left:-40:0  || yabai -m window --resize right:-40:0
