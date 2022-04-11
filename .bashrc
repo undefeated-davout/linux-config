@@ -1,9 +1,5 @@
-
 # Ubuntu用Git補完設定
 source /usr/share/bash-completion/completions/git
-# Mac用Git補完設定
-# source /usr/local/Cellar/git/2.21.0/etc/bash_completion.d/git-prompt.sh
-# source /usr/local/Cellar/git/2.21.0/etc/bash_completion.d/git-completion.bash
 
 # エイリアス
 alias ll='ls -lahF'
@@ -33,3 +29,4 @@ stty start undef
 if ! [ "$TMUX" = "" ]; then
   tmux set-option status-bg $(perl -MList::Util=sum -e'print+(red,green,blue,yellow,cyan,magenta,white)[sum(unpack"C*",shift)%7]' $(hostname)) | cat > /dev/null
 fi
+
