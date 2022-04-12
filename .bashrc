@@ -2,8 +2,8 @@
 source /usr/share/bash-completion/completions/git
 
 # エイリアス
-alias ll='ls -lahF'
-alias lr='ls -lahFtr'
+alias ll='ladd_line; ls -lahF'
+alias lr='add_linee; ls -lahFtr'
 
 # 出力の後に改行を入れる
 function add_line {
