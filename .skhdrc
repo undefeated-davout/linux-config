@@ -32,7 +32,7 @@ alt - x : yabai -m space --mirror y-axis
 alt - y : yabai -m space --mirror x-axis
 
 # フルスクリーン
-alt - m : yabai -m window --toggle zoom-fullscreen
+alt - d : yabai -m window --toggle zoom-fullscreen
 
 # 分割方式変更
 alt - e : yabai -m window --toggle split
