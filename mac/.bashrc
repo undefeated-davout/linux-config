@@ -1,6 +1,6 @@
 # Git補完設定
-source /usr/local/Cellar/git/2.35.1/etc/bash_completion.d/git-prompt.sh
-source /usr/local/Cellar/git/2.35.1/etc/bash_completion.d/git-completion.bash
+source /usr/local/Cellar/git/2.35.3/etc/bash_completion.d/git-prompt.sh
+source /usr/local/Cellar/git/2.35.3/etc/bash_completion.d/git-completion.bash
 
 # エイリアス
 alias ll='add_line; exa -lahF --time-style=long-iso --no-permissions --no-user --icons'
