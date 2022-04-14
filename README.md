@@ -3,7 +3,7 @@
 ## .bashrc
 
 ```bash
-cp .bashrc_mac ~/.bashrc
+cp .mac/.bashrc ~/
 ```
 
 ## vi
