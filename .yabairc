@@ -10,6 +10,8 @@ yabai -m rule --add app='^Sourcetree$' manage=off
 yabai -m rule --add app='^計算機$' manage=off
 yabai -m rule --add app='^MySQLWorkbench$' manage=off
 yabai -m rule --add app='^ESET Cyber Security Pro$' manage=off
+yabai -m rule --add app='^PinPoint$' manage=off
+yabai -m rule --add app='^Logicool G HUB$' manage=off
 
 # global settings
 yabai -m config mouse_follows_focus          off
