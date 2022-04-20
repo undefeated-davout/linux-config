@@ -34,6 +34,9 @@ alt - y : yabai -m space --mirror x-axis
 # フルスクリーン
 alt - d : yabai -m window --toggle zoom-fullscreen
 
+# フローティング
+alt - f : yabai -m window --toggle float && yabai -m window --grid 4:4:1:1:2:2
+
 # 分割方式変更
 alt - e : yabai -m window --toggle split
 
