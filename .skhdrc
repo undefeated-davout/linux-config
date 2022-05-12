@@ -62,5 +62,5 @@ alt - 1 : open /System/Library/CoreServices/Finder.app
 alt - 2 : open -n /Applications/Google\ Chrome.app
 alt - 3 : open -n /Applications/CotEditor.app
 alt - 4 : open -n /Applications/Visual\ Studio\ Code.app
-alt - 5 : open /System/Applications/Stickies.app
+alt - 5 : open /System/Applications/Calculator.app
 
