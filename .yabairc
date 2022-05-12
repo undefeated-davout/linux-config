@@ -12,7 +12,6 @@ yabai -m rule --add app='^MySQLWorkbench$' manage=off
 yabai -m rule --add app='^ESET Cyber Security Pro$' manage=off
 yabai -m rule --add app='^Logicool G HUB$' manage=off
 yabai -m rule --add app='^QuickTime Player$' manage=off
-yabai -m rule --add app='^VirtualBox' manage=off
 yabai -m rule --add app='^プレビュー$' manage=off
 yabai -m rule --add title='の情報$' manage=off
 
