@@ -48,9 +48,9 @@ alt - z : yabai -m display --focus prev
 alt - c : yabai -m display --focus next
 
 # 指定のディスプレイ番号へフォーカス移動
-cmd - 1 : yabai -m display --focus 1
-cmd - 2 : yabai -m display --focus 2
-cmd - 3 : yabai -m display --focus 3
+# cmd - 1 : yabai -m display --focus 1
+# cmd - 2 : yabai -m display --focus 2
+# cmd - 3 : yabai -m display --focus 3
 
 # 指定のディスプレイ番号へウィンドウを移動
 ctrl + cmd - 1 : yabai -m window --display 1; yabai -m display --focus 1
@@ -58,8 +58,9 @@ ctrl + cmd - 2 : yabai -m window --display 2; yabai -m display --focus 2
 ctrl + cmd - 3 : yabai -m window --display 3; yabai -m display --focus 3
 
 # アプリ起動
-alt - 1 : open /System/Library/CoreServices/Finder.app
-alt - 2 : open -n /Applications/Google\ Chrome.app
-alt - 3 : open -n /Applications/CotEditor.app
-alt - 4 : open -n /Applications/Visual\ Studio\ Code.app
-alt - 5 : open /System/Applications/Calculator.app
+cmd - 1 : open -n /Applications/iTerm.app
+cmd - 2 : open -n /System/Library/CoreServices/Finder.app
+cmd - 3 : open -n /Applications/Google\ Chrome.app
+cmd - 4 : open -n /Applications/CotEditor.app
+cmd - 5 : open -n /Applications/Visual\ Studio\ Code.app
+cmd - 6 : open /System/Applications/Calculator.app
