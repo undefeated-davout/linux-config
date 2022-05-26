@@ -4,23 +4,23 @@ ctrl - down : yabai -m window --focus south
 ctrl - left : yabai -m window --focus west
 ctrl - right : yabai -m window --focus east
 
-# swap window
-shift + ctrl - up    : yabai -m window --swap north
-shift + ctrl - down  : yabai -m window --swap south
-shift + ctrl - left  : yabai -m window --swap west
-shift + ctrl - right : yabai -m window --swap east
-
 # move window
 cmd + alt - up    : yabai -m window --warp north
 cmd + alt - down  : yabai -m window --warp south
 cmd + alt - left  : yabai -m window --warp west
 cmd + alt - right : yabai -m window --warp east
 
+# swap window
+alt + shift - up    : yabai -m window --swap north
+alt + shift - down  : yabai -m window --swap south
+alt + shift - left  : yabai -m window --swap west
+alt + shift - right : yabai -m window --swap east
+
 # サイズ調整
-alt + shift - up    : yabai -m window --resize top:0:-400   || yabai -m window --resize bottom:0:-400
-alt + shift - down  : yabai -m window --resize bottom:0:400 || yabai -m window --resize top:0:400
-alt + shift - left  : yabai -m window --resize left:-400:0  || yabai -m window --resize right:-400:0
-alt + shift - right : yabai -m window --resize right:400:0  || yabai -m window --resize left:400:0
+ctrl + shift - up    : yabai -m window --resize top:0:-400   || yabai -m window --resize bottom:0:-400
+ctrl + shift - down  : yabai -m window --resize bottom:0:400 || yabai -m window --resize top:0:400
+ctrl + shift - left  : yabai -m window --resize left:-400:0  || yabai -m window --resize right:-400:0
+ctrl + shift - right : yabai -m window --resize right:400:0  || yabai -m window --resize left:400:0
 
 # 時計回りに回転
 alt - r : yabai -m space --rotate 270
