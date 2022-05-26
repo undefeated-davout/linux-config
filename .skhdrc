@@ -1,8 +1,8 @@
 # focus window
-alt - k : yabai -m window --focus north
-alt - j : yabai -m window --focus south
-alt - h : yabai -m window --focus west
-alt - l : yabai -m window --focus east
+ctrl - up : yabai -m window --focus north
+ctrl - down : yabai -m window --focus south
+ctrl - left : yabai -m window --focus west
+ctrl - right : yabai -m window --focus east
 
 # swap window
 shift + ctrl - up    : yabai -m window --swap north
@@ -11,16 +11,16 @@ shift + ctrl - left  : yabai -m window --swap west
 shift + ctrl - right : yabai -m window --swap east
 
 # move window
-shift + alt - up    : yabai -m window --warp north
-shift + alt - down  : yabai -m window --warp south
-shift + alt - left  : yabai -m window --warp west
-shift + alt - right : yabai -m window --warp east
+cmd + alt - up    : yabai -m window --warp north
+cmd + alt - down  : yabai -m window --warp south
+cmd + alt - left  : yabai -m window --warp west
+cmd + alt - right : yabai -m window --warp east
 
 # サイズ調整
-ctrl - up    : yabai -m window --resize top:0:-400   || yabai -m window --resize bottom:0:-400
-ctrl - down  : yabai -m window --resize bottom:0:400 || yabai -m window --resize top:0:400
-ctrl - left  : yabai -m window --resize left:-400:0  || yabai -m window --resize right:-400:0
-ctrl - right : yabai -m window --resize right:400:0  || yabai -m window --resize left:400:0
+alt + shift - up    : yabai -m window --resize top:0:-400   || yabai -m window --resize bottom:0:-400
+alt + shift - down  : yabai -m window --resize bottom:0:400 || yabai -m window --resize top:0:400
+alt + shift - left  : yabai -m window --resize left:-400:0  || yabai -m window --resize right:-400:0
+alt + shift - right : yabai -m window --resize right:400:0  || yabai -m window --resize left:400:0
 
 # 時計回りに回転
 alt - r : yabai -m space --rotate 270
@@ -63,4 +63,3 @@ alt - 2 : open -n /Applications/Google\ Chrome.app
 alt - 3 : open -n /Applications/CotEditor.app
 alt - 4 : open -n /Applications/Visual\ Studio\ Code.app
 alt - 5 : open /System/Applications/Calculator.app
-
