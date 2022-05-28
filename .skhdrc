@@ -58,9 +58,9 @@ ctrl + cmd - 2 : yabai -m window --display 2; yabai -m display --focus 2
 ctrl + cmd - 3 : yabai -m window --display 3; yabai -m display --focus 3
 
 # アプリ起動
-cmd - 1 : open -n /Applications/iTerm.app
+cmd - 1 : open /Applications/iTerm.app
 cmd - 2 : open -n /System/Library/CoreServices/Finder.app
 cmd - 3 : open -n /Applications/Google\ Chrome.app
-cmd - 4 : open -n /Applications/CotEditor.app
-cmd - 5 : open -n /Applications/Visual\ Studio\ Code.app
+cmd - 4 : open /Applications/CotEditor.app
+cmd - 5 : open /Applications/Visual\ Studio\ Code.app
 cmd - 6 : open /System/Applications/Calculator.app
