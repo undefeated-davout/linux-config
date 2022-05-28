@@ -1,26 +1,61 @@
-# focus window
-ctrl - up : yabai -m window --focus north
-ctrl - down : yabai -m window --focus south
-ctrl - left : yabai -m window --focus west
-ctrl - right : yabai -m window --focus east
+# ディスプレイ内フォーカス移動
+cmd + ctrl - up    : yabai -m window --focus north
+cmd + ctrl - down  : yabai -m window --focus south
+cmd + ctrl - left  : yabai -m window --focus west
+cmd + ctrl - right : yabai -m window --focus east
+cmd + ctrl - p     : yabai -m window --focus north
+cmd + ctrl - n     : yabai -m window --focus south
+cmd + ctrl - b     : yabai -m window --focus west
+cmd + ctrl - f     : yabai -m window --focus east
 
-# move window
+# 次のディスプレイへフォーカス移動
+cmd + ctrl - z : yabai -m display --focus prev
+cmd + ctrl - c : yabai -m display --focus next
+
+# 指定のディスプレイ番号へフォーカス移動
+cmd + ctrl - 1 : yabai -m display --focus 1
+cmd + ctrl - 2 : yabai -m display --focus 2
+cmd + ctrl - 3 : yabai -m display --focus 3
+
+# ディスプレイ内ウィンドウ移動
 cmd + alt - up    : yabai -m window --warp north
 cmd + alt - down  : yabai -m window --warp south
 cmd + alt - left  : yabai -m window --warp west
 cmd + alt - right : yabai -m window --warp east
+cmd + alt - p     : yabai -m window --warp north
+cmd + alt - n     : yabai -m window --warp south
+cmd + alt - b     : yabai -m window --warp west
+cmd + alt - f     : yabai -m window --warp east
 
-# swap window
-alt + shift - up    : yabai -m window --swap north
-alt + shift - down  : yabai -m window --swap south
-alt + shift - left  : yabai -m window --swap west
-alt + shift - right : yabai -m window --swap east
+# 指定のディスプレイ番号へウィンドウを移動
+cmd + alt - 1 : yabai -m window --display 1; yabai -m display --focus 1
+cmd + alt - 2 : yabai -m window --display 2; yabai -m display --focus 2
+cmd + alt - 3 : yabai -m window --display 3; yabai -m display --focus 3
+
+# ディスプレイ内ウィンドウ入れ替え
+shift + alt - up    : yabai -m window --swap north
+shift + alt - down  : yabai -m window --swap south
+shift + alt - left  : yabai -m window --swap west
+shift + alt - right : yabai -m window --swap east
+shift + alt - p     : yabai -m window --swap north
+shift + alt - n     : yabai -m window --swap south
+shift + alt - b     : yabai -m window --swap west
+shift + alt - f     : yabai -m window --swap east
+
+# 指定のディスプレイ番号へウィンドウ入れ替え
+shift + alt - 1 : yabai -m window --swap --display 1; yabai -m display --focus 1
+shift + alt - 2 : yabai -m window --swap --display 2; yabai -m display --focus 2
+shift + alt - 3 : yabai -m window --swap --display 3; yabai -m display --focus 3
 
 # サイズ調整
-ctrl + shift - up    : yabai -m window --resize top:0:-200   || yabai -m window --resize bottom:0:-200
-ctrl + shift - down  : yabai -m window --resize bottom:0:200 || yabai -m window --resize top:0:200
-ctrl + shift - left  : yabai -m window --resize left:-200:0  || yabai -m window --resize right:-200:0
-ctrl + shift - right : yabai -m window --resize right:200:0  || yabai -m window --resize left:200:0
+shift + ctrl - up    : yabai -m window --resize top:0:-200   || yabai -m window --resize bottom:0:-200
+shift + ctrl - down  : yabai -m window --resize bottom:0:200 || yabai -m window --resize top:0:200
+shift + ctrl - left  : yabai -m window --resize left:-200:0  || yabai -m window --resize right:-200:0
+shift + ctrl - right : yabai -m window --resize right:200:0  || yabai -m window --resize left:200:0
+shift + ctrl - p     : yabai -m window --resize top:0:-200   || yabai -m window --resize bottom:0:-200
+shift + ctrl - n     : yabai -m window --resize bottom:0:200 || yabai -m window --resize top:0:200
+shift + ctrl - b     : yabai -m window --resize left:-200:0  || yabai -m window --resize right:-200:0
+shift + ctrl - f     : yabai -m window --resize right:200:0  || yabai -m window --resize left:200:0
 
 # 時計回りに回転
 alt - r : yabai -m space --rotate 270
@@ -42,20 +77,6 @@ alt - e : yabai -m window --toggle split
 
 # 分割バランス
 shift + alt - 0 : yabai -m space --balance
-
-# 次のディスプレイへフォーカス移動
-alt - z : yabai -m display --focus prev
-alt - c : yabai -m display --focus next
-
-# 指定のディスプレイ番号へフォーカス移動
-# cmd - 1 : yabai -m display --focus 1
-# cmd - 2 : yabai -m display --focus 2
-# cmd - 3 : yabai -m display --focus 3
-
-# 指定のディスプレイ番号へウィンドウを移動
-ctrl + cmd - 1 : yabai -m window --display 1; yabai -m display --focus 1
-ctrl + cmd - 2 : yabai -m window --display 2; yabai -m display --focus 2
-ctrl + cmd - 3 : yabai -m window --display 3; yabai -m display --focus 3
 
 # アプリ起動
 cmd - 1 : open /Applications/iTerm.app
