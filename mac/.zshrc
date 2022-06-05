@@ -17,6 +17,9 @@ setopt PROMPT_SUBST
 prompt_symbol=㉿
 PROMPT=$'%F{%(#.blue.green)}┌──${debian_chroot:+($debian_chroot)─}${VIRTUAL_ENV:+($(basename $VIRTUAL_ENV))─}(%B%F{%(#.red.blue)}%n'$prompt_symbol$'%m%b%F{%(#.blue.green)})-[%B%F{reset}%(6~.%-1~/…/%4~.%5~)%b%F{%(#.blue.green)}] %B%F{202}$(__git_ps1 "(%s)")%b%f\n%F{%(#.blue.green)}└─%f%B%(#.%F{red}#.%F{blue}$)%b%F{reset} '
 
+# ls色設定
+export LS_COLORS="$LS_COLORS:di=01;31:"
+
 # zsh補完
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
