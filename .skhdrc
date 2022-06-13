@@ -80,7 +80,7 @@ shift + alt - 0 : yabai -m space --balance
 
 # アプリ起動
 cmd - 1 : open /Applications/iTerm.app
-cmd - 2 : open /System/Library/CoreServices/Finder.app
+cmd - 2 : open -n /System/Library/CoreServices/Finder.app
 cmd - 3 : open -n /Applications/Google\ Chrome.app
 cmd - 4 : open -n /Applications/CotEditor.app
 cmd - 5 : open /Applications/Visual\ Studio\ Code.app
