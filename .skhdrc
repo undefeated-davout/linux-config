@@ -79,7 +79,7 @@ alt - e : yabai -m window --toggle split
 shift + alt - 0 : yabai -m space --balance
 
 # アプリ起動
-cmd - 1 : open -n /Applications/iTerm.app
+cmd - 1 : open /Applications/iTerm.app
 cmd - 2 : open /System/Library/CoreServices/Finder.app
 cmd - 3 : open -n /Applications/Google\ Chrome.app
 cmd - 4 : open -n /Applications/CotEditor.app
