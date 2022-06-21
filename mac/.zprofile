@@ -13,3 +13,8 @@ export PATH="/usr/local/opt/libxml2/bin:$PATH"
 export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init -)"
 
+# color
+if [[ "$TERM" == "tmux-256color" ]]; then
+  export TERM=xterm-256color
+fi
+
