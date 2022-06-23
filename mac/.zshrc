@@ -109,4 +109,3 @@ fssh() {
 
     ssh ${sshLoginHost}
 }
-
