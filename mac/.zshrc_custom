@@ -3,9 +3,9 @@
 [ -f ~/data/settings/linux-config/mac/.bash_aliases ] && source ~/data/settings/linux-config/mac/.bash_aliases
 
 # Git補完設定
-source /usr/local/Cellar/git/2.37.0/etc/bash_completion.d/git-prompt.sh
+source /usr/local/Cellar/git/2.37.1/etc/bash_completion.d/git-prompt.sh
 fpath=(~/.zsh $fpath)
-zstyle ':completion:*:*:git:*' script /usr/local/Cellar/git/2.37.0/etc/bash_completion.d/git-completion.bash
+zstyle ':completion:*:*:git:*' script /usr/local/Cellar/git/2.37.1/etc/bash_completion.d/git-completion.bash
 autoload -Uz compinit && compinit
 
 # プロンプトのオプション表示設定
