@@ -1,0 +1,60 @@
+# カスタム設定読み込み
+[ -f ~/data/settings/linux-config/mac/.bash_funcs ] && source ~/data/settings/linux-config/mac/.bash_funcs
+[ -f ~/data/settings/linux-config/mac/.bash_aliases ] && source ~/data/settings/linux-config/mac/.bash_aliases
+
+# Git補完設定
+source /usr/local/Cellar/git/2.37.0/etc/bash_completion.d/git-prompt.sh
+fpath=(~/.zsh $fpath)
+zstyle ':completion:*:*:git:*' script /usr/local/Cellar/git/2.37.0/etc/bash_completion.d/git-completion.bash
+autoload -Uz compinit && compinit
+
+# プロンプトのオプション表示設定
+GIT_PS1_SHOWDIRTYSTATE=true
+GIT_PS1_SHOWUNTRACKEDFILES=true
+GIT_PS1_SHOWSTASHSTATE=true
+GIT_PS1_SHOWUPSTREAM=auto
+
+# プロンプトの表示設定
+setopt PROMPT_SUBST
+prompt_symbol=㉿
+PROMPT=$'%F{%(#.blue.green)}┌──${debian_chroot:+($debian_chroot)─}${VIRTUAL_ENV:+($(basename $VIRTUAL_ENV))─}(%B%F{%(#.red.blue)}%n '$prompt_symbol$'%m%b%F{%(#.blue.green)})-[%B%F{reset}%(6~.%-1~/…/%4~.%5~)%b%F{%(#.blue.green)}] %B%F{202}$(__git_ps1 "(%s)")%b%f\n%F{%(#.blue.green)}└─%f%B%(#.%F{red}#.%F{blue}$)%b%F{reset} '
+
+# ls色設定
+export LS_COLORS="$LS_COLORS:di=01;36"
+
+# zsh補完
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# 出力の後に改行を入れる
+function precmd() {
+  # Print a newline before the prompt, unless it's the
+  # first prompt in the process.
+  if [ -z "$NEW_LINE_BEFORE_PROMPT" ]; then
+      NEW_LINE_BEFORE_PROMPT=1
+  elif [ "$NEW_LINE_BEFORE_PROMPT" -eq 1 ]; then
+      echo ""
+  fi
+}
+
+# 表示する階層を3つまでにする（bash ver.4.0以上必要）
+GIT_PS1_SHOWDIRTYSTATE=true
+export PROMPT_DIRTRIM=3
+#export PS1='\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\$ '
+
+# ctrl + rの逆方向用設定
+stty stop undef
+stty start undef
+
+# tmux設定
+if ! [ "$TMUX" = "" ]; then
+  tmux set-option status-bg $(perl -MList::Util=sum -e'print+(red,green,blue,yellow,cyan,magenta,white)[sum(unpack"C*",shift)%7]' $(hostname)) | cat > /dev/null
+fi
+
+# zコマンド
+. /usr/local/etc/profile.d/z.sh
+
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# venvデフォルト環境起動
+source ~/.venvs/venv3/bin/activate

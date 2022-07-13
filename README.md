@@ -1,12 +1,22 @@
 # linux用設定ファイル
 
-## .bashrc
+## .zsh
+
+### .zshrc
 
 ```bash
-cp mac/.bashrc ~/
+# 以下を追記
+[ -f ~/data/settings/linux-config/mac/.zshrc_custom ] && source ~/data/settings/linux-config/mac/.zshrc_custom
 ```
 
-## vi
+### .zprofile
+
+```bash
+# 以下を追記
+[ -f ~/data/settings/linux-config/mac/.zprofile_custom ] && source ~/data/settings/linux-config/mac/.zprofile_custom
+```
+
+## vim
 
 ```bash
 cp .vimrc ~/
