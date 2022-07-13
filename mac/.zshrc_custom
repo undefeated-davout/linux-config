@@ -36,11 +36,6 @@ function precmd() {
   fi
 }
 
-# 表示する階層を3つまでにする（bash ver.4.0以上必要）
-GIT_PS1_SHOWDIRTYSTATE=true
-export PROMPT_DIRTRIM=3
-#export PS1='\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\$ '
-
 # ctrl + rの逆方向用設定
 stty stop undef
 stty start undef
