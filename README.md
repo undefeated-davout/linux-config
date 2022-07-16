@@ -38,7 +38,7 @@ brew services restart skhd
 
 ## Karabiner-Elements
 
-- [公式サイト](https://karabiner-elements.pqrs.org/)からダウンロードする
+- [公式サイト](https://karabiner-elements.pqrs.org/)からダウンロード、インストールする
 
 ```bash
 cp ./karabiner/custom_key_bind.json ~/.config/karabiner/assets/complex_modifications/
