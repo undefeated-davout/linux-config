@@ -6,14 +6,14 @@
 
 ```bash
 # 以下を追記
-[ -f ~/data/settings/linux-config/mac/.zshrc_custom ] && source ~/data/settings/linux-config/mac/.zshrc_custom
+[ -f ~/data/settings/linux-config/shell/.zshrc_custom ] && source ~/data/settings/linux-config/shell/.zshrc_custom
 ```
 
 ### .zprofile
 
 ```bash
 # 以下を追記
-[ -f ~/data/settings/linux-config/mac/.zprofile_custom ] && source ~/data/settings/linux-config/mac/.zprofile_custom
+[ -f ~/data/settings/linux-config/shell/.zprofile_custom ] && source ~/data/settings/linux-config/shell/.zprofile_custom
 ```
 
 ## vim

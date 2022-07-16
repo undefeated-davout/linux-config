@@ -1,6 +1,6 @@
 # カスタム設定読み込み
-[ -f ~/data/settings/linux-config/mac/.bash_funcs ] && source ~/data/settings/linux-config/mac/.bash_funcs
-[ -f ~/data/settings/linux-config/mac/.bash_aliases ] && source ~/data/settings/linux-config/mac/.bash_aliases
+[ -f ~/data/settings/linux-config/shell/.bash_funcs ] && source ~/data/settings/linux-config/shell/.bash_funcs
+[ -f ~/data/settings/linux-config/shell/.bash_aliases ] && source ~/data/settings/linux-config/shell/.bash_aliases
 
 # Git補完設定
 source /usr/local/Cellar/git/2.37.1/etc/bash_completion.d/git-prompt.sh
