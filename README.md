@@ -44,5 +44,9 @@ brew services restart skhd
 cp ./karabiner/custom_key_bind.json ~/.config/karabiner/assets/complex_modifications/
 ```
 
-- [For Japanese （日本語環境向けの設定） (rev 6)](https://ke-complex-modifications.pqrs.org/#international)をImport
-- [コマンドキーを単体で押したときに、英数・かなキーを送信する。]をEnabledにする
+- 英語／かな切り替え設定
+  - [For Japanese （日本語環境向けの設定） (rev 6)](https://ke-complex-modifications.pqrs.org/#international)をImport
+  - [コマンドキーを単体で押したときに、英数・かなキーを送信する。]をEnabledにする
+- HHKBのFnキーが上書きされるのを防止
+  - Karabiner-Elements > Function keys
+    - [Use all F1, F2, etc. keys as standard function keys]をONにする
