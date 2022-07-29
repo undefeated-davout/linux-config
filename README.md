@@ -16,6 +16,13 @@
 [ -f ~/data/repo/github.com/undefeated-davout/linux-config/shell/.zprofile_custom ] && source ~/data/repo/github.com/undefeated-davout/linux-config/shell/.zprofile_custom
 ```
 
+## VS Code
+
+```bash
+cp ./vscode_settings/go.json ~/Library/Application\ Support/Code/User/snippets/
+cp ./vscode_settings/keybindings.json ~/Library/Application\ Support/Code/User/
+```
+
 ## vim
 
 ```bash
