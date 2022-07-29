@@ -21,6 +21,7 @@
 ```bash
 cp ./vscode_settings/go.json ~/Library/Application\ Support/Code/User/snippets/
 cp ./vscode_settings/keybindings.json ~/Library/Application\ Support/Code/User/
+cp ./vscode_settings/settings.json ~/Library/Application\ Support/Code/User/
 ```
 
 ## vim
