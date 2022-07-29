@@ -1,0 +1,69 @@
+{
+  "editor.fontFamily": "'Ricty Discord', Ricty, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 16,
+  "terminal.integrated.fontSize": 14,
+  "window.zoomLevel": 0,
+  "workbench.startupEditor": "newUntitledFile",
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "settingsSync.ignoredExtensions": [],
+  "workbench.settings.enableNaturalLanguageSearch": false,
+  "editor.suggestSelection": "first",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true // ファイル保存時にESLintでフォーマット
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.minimap.enabled": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "terminal.integrated.shellArgs.linux": ["-l"],
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "git.ignoreLegacyWarning": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "json.schemas": [],
+  "terminal.integrated.fontFamily": "'Hack Nerd Font'",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "git.ignoreMissingGitWarning": true,
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.associations": {
+    "*.golden": "json"
+  },
+  "terminal.integrated.profiles.linux": {
+    "bash": {
+      "path": "bash",
+      "icon": "terminal-bash"
+    },
+    "zsh": {
+      "path": "zsh"
+    },
+    "fish": {
+      "path": "fish"
+    },
+    "tmux": {
+      "path": "tmux",
+      "icon": "terminal-tmux"
+    },
+    "pwsh": {
+      "path": "pwsh",
+      "icon": "terminal-powershell"
+    }
+  },
+  "terminal.integrated.defaultProfile.linux": "bash"
+}
