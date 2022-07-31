@@ -6,9 +6,7 @@ yabai -m rule --add app='^システム環境設定$' manage=off
 yabai -m rule --add app='^システム情報$' manage=off
 yabai -m rule --add app='^App Store$' manage=off
 yabai -m rule --add app='^アクティビティモニタ$' manage=off
-#yabai -m rule --add app='^Sourcetree$' manage=off
 yabai -m rule --add app='^計算機$' manage=off
-# yabai -m rule --add app='^MySQLWorkbench$' manage=off
 yabai -m rule --add app='^ESET Cyber Security Pro$' manage=off
 yabai -m rule --add app='^Logicool G HUB$' manage=off
 yabai -m rule --add app='^QuickTime Player$' manage=off
