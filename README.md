@@ -6,14 +6,14 @@
 
 ```bash
 # 以下を追記
-[ -f ~/data/repo/github.com/undefeated-davout/linux-config/shell/.zshrc_custom ] && source ~/data/repo/github.com/undefeated-davout/linux-config/shell/.zshrc_custom
+[ -f ~/work/repo/github.com/undefeated-davout/linux-config/shell/.zshrc_custom ] && source ~/work/repo/github.com/undefeated-davout/linux-config/shell/.zshrc_custom
 ```
 
 ### .zprofile
 
 ```bash
 # 以下を追記
-[ -f ~/data/repo/github.com/undefeated-davout/linux-config/shell/.zprofile_custom ] && source ~/data/repo/github.com/undefeated-davout/linux-config/shell/.zprofile_custom
+[ -f ~/work/repo/github.com/undefeated-davout/linux-config/shell/.zprofile_custom ] && source ~/work/repo/github.com/undefeated-davout/linux-config/shell/.zprofile_custom
 ```
 
 ## VS Code
