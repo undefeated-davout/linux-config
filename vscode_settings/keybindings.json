@@ -43,5 +43,15 @@
     "key": "alt+left",
     "command": "-cursorWordLeft",
     "when": "textInputFocus"
+  },
+  {
+    "key": "f11",
+    "command": "workbench.action.toggleFullScreen",
+    "when": "!isIOS"
+  },
+  {
+    "key": "ctrl+cmd+f",
+    "command": "-workbench.action.toggleFullScreen",
+    "when": "!isIOS"
   }
 ]

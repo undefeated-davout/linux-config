@@ -66,5 +66,6 @@
     }
   },
   "terminal.integrated.defaultProfile.linux": "bash",
-  "explorer.compactFolders": false
+  "explorer.compactFolders": false,
+  "javascript.updateImportsOnFileMove.enabled": "always"
 }
