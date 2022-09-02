@@ -1,0 +1,32 @@
+{
+  "title": "HHKB Fn + f → fn + f",
+  "rules": [
+    {
+      "description": "HHKB Fn + f → fn + f",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f20"
+          },
+          "to": [
+            {
+              "key_code": "f",
+              "modifiers": ["fn"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.google.Chrome",
+                "^com.brave.Browser",
+                "^org.mozilla.firefox"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -49,7 +49,7 @@ brew services restart skhd
 - [公式サイト](https://karabiner-elements.pqrs.org/)からダウンロード、インストールする
 
 ```bash
-cp ./karabiner/custom_key_bind.json ~/.config/karabiner/assets/complex_modifications/
+cp -R ./karabiner/ ~/.config/karabiner/assets/complex_modifications/
 ```
 
 - HHKBのFnキーが上書きされるのを防止
