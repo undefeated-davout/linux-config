@@ -20,7 +20,7 @@ yabai -m config window_opacity_duration      0.0
 yabai -m config active_window_opacity        1.0
 yabai -m config normal_window_opacity        0.95
 yabai -m config window_border                on
-yabai -m config window_border_width          5
+yabai -m config window_border_width          4
 yabai -m config active_window_border_color   0xffBCC48C
 yabai -m config normal_window_border_color   0x00ffffff
 yabai -m config insert_feedback_color        0xaad75f5f
@@ -36,7 +36,7 @@ yabai -m config top_padding                  0
 yabai -m config bottom_padding               0
 yabai -m config left_padding                 0
 yabai -m config right_padding                0
-yabai -m config window_gap                   02
+yabai -m config window_gap                   0
 
 # restore position of floating windows when they are manually unfloated
 # ~/Scripts/yabai_restore.sh
