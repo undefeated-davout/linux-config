@@ -1,3 +1,8 @@
+# man2html
+htmlman () {
+  env LANG=C man $1 | man2html > /tmp/man2html.html && open /tmp/man2html.html
+}
+
 # peco
 function peco-src () {
   local selected_dir=$(ghq list -p | peco --query "$LBUFFER")
