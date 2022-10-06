@@ -1,5 +1,5 @@
 # man2html
-manh () {
+hman () {
   env LANG=C man $1 | man2html > /tmp/man2html.html && open /tmp/man2html.html
 }
 
