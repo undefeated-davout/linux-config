@@ -1,4 +1,4 @@
-GIT_VERSION=2.38.0
+GIT_VERSION=2.38.1
 
 # カスタム設定読み込み
 [ -f ~/work/repo/github.com/undefeated-davout/linux-config/shell/.bash_funcs ] && source ~/work/repo/github.com/undefeated-davout/linux-config/shell/.bash_funcs
