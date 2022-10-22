@@ -2,7 +2,7 @@
 
 function countDown() {
   start=1
-  end=3
+  end=10
   echo "please wait $end seconds"
   while [[ $start -lt $end ]]; do
     echo $(($end-$start))
@@ -11,10 +11,9 @@ function countDown() {
   done
 }
 
-countDown
-
 echo "brew services restart yabai"
 brew services restart yabai
 
 countDown
-~/work/repo/github.com/undefeated-davout/linux-config/shell/login.sh
+echo "brew services restart yabai"
+brew services restart yabai
