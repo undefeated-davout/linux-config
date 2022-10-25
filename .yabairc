@@ -1,16 +1,8 @@
 #!/usr/bin/env sh
 
 # ignore yabai
-# Japanese
-yabai -m rule --add app='^スティッキーズ$' manage=off
-yabai -m rule --add app='^システム環境設定$' manage=off
-yabai -m rule --add app='^システム情報$' manage=off
-yabai -m rule --add app='^計算機$' manage=off
-yabai -m rule --add app='^プレビュー$' manage=off
-yabai -m rule --add title='の情報$' manage=off
-# English
 yabai -m rule --add app='^Stickies$' manage=off
-yabai -m rule --add app='^System Preferences$' manage=off
+yabai -m rule --add app='^System Settings$' manage=off
 yabai -m rule --add app='^System Information$' manage=off
 yabai -m rule --add app='^Calculator$' manage=off
 yabai -m rule --add app='^Preview$' manage=off
