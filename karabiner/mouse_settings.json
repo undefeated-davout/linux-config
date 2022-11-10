@@ -7,8 +7,49 @@
         {
           "type": "basic",
           "from": {
+            "pointing_button": "button4"
+          },
+          "to": [
+            {
+              "key_code": "open_bracket",
+              "modifiers": "left_command"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "pointing_button": "button5"
+          },
+          "to": [
+            {
+              "key_code": "close_bracket",
+              "modifiers": "left_command"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
             "key_code": "q",
-            "modifiers": { "mandatory": ["right_control"] }
+            "modifiers": {
+              "mandatory": ["right_control"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "q",
+              "modifiers": "left_command"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "q",
+            "modifiers": {
+              "mandatory": ["right_control"]
+            }
           },
           "to": [
             {
@@ -21,7 +62,9 @@
           "type": "basic",
           "from": {
             "key_code": "w",
-            "modifiers": { "mandatory": ["right_control"] }
+            "modifiers": {
+              "mandatory": ["right_control"]
+            }
           },
           "to": [
             {
