@@ -1,0 +1,36 @@
+{
+  "title": "Mouse Settings",
+  "rules": [
+    {
+      "description": "Mouse Setting rules",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "q",
+            "modifiers": { "mandatory": ["right_control"] }
+          },
+          "to": [
+            {
+              "key_code": "q",
+              "modifiers": "left_command"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "w",
+            "modifiers": { "mandatory": ["right_control"] }
+          },
+          "to": [
+            {
+              "key_code": "w",
+              "modifiers": "left_command"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
