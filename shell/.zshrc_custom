@@ -1,8 +1,8 @@
 GIT_VERSION=2.38.1
 
 # カスタム設定読み込み
-[ -f ~/work/repo/github.com/undefeated-davout/linux-config/shell/.bash_funcs ] && source ~/work/repo/github.com/undefeated-davout/linux-config/shell/.bash_funcs
-[ -f ~/work/repo/github.com/undefeated-davout/linux-config/shell/.bash_aliases ] && source ~/work/repo/github.com/undefeated-davout/linux-config/shell/.bash_aliases
+source ~/data/repo/github.com/undefeated-davout/linux-config/shell/.bash_funcs
+source ~/data/repo/github.com/undefeated-davout/linux-config/shell/.bash_aliases
 
 # Git補完設定
 source /usr/local/Cellar/git/$GIT_VERSION/etc/bash_completion.d/git-prompt.sh
@@ -51,7 +51,7 @@ fi
 . /usr/local/etc/profile.d/z.sh
 
 # fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source ~/.fzf.zsh
 
 # venvデフォルト環境起動
 source ~/.venvs/venv3/bin/activate

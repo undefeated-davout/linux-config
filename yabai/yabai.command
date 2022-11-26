@@ -20,4 +20,4 @@ countDown
 echo "brew services restart yabai"
 brew services restart yabai
 
-~/work/repo/github.com/undefeated-davout/linux-config/shell/login.sh
+~/data/repo/github.com/undefeated-davout/linux-config/shell/login.sh
