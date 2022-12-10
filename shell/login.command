@@ -7,4 +7,4 @@ echo 'set sound volume'
 ~/data/repo/github.com/undefeated-davout/linux-config/yabai/yabai.sh
 
 # delayed run
-~/data/repo/github.com/undefeated-davout/linux-config/shell/delay_run.sh
+~/data/repo/github.com/undefeated-davout/linux-config/shell/delayed_run.sh
