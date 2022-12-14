@@ -8,16 +8,12 @@ cp ./configs/* ~/
 
 ## .zsh
 
-### .zshrc
-
 ```bash
+# .zshrc
 # add the following code
 source ~/data/repo/github.com/undefeated-davout/linux-config/shell/.zshrc_custom
-```
 
-### .zprofile
-
-```bash
+# .zprofile
 # add the following code
 source ~/data/repo/github.com/undefeated-davout/linux-config/shell/.zprofile_custom
 ```
