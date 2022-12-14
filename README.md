@@ -1,18 +1,24 @@
-# linux用設定ファイル
+# SETTING FILES FOR LINUX
+
+## copy configs
+
+```bash
+cp ./configs/* ~/
+```
 
 ## .zsh
 
 ### .zshrc
 
 ```bash
-# 以下を追記
+# add the following code
 source ~/data/repo/github.com/undefeated-davout/linux-config/shell/.zshrc_custom
 ```
 
 ### .zprofile
 
 ```bash
-# 以下を追記
+# add the following code
 source ~/data/repo/github.com/undefeated-davout/linux-config/shell/.zprofile_custom
 ```
 
@@ -24,24 +30,16 @@ cp ./vscode_settings/keybindings.json ~/Library/Application\ Support/Code/User/
 cp ./vscode_settings/settings.json ~/Library/Application\ Support/Code/User/
 ```
 
-## vim
-
-```bash
-cp .vimrc ~/
-```
-
 ## yabai
 
 ```bash
-cp .yabairc ~/
-brew services restart yabai
+cp ./configs/* ~/ && brew services restart yabai
 ```
 
 ## skhd
 
 ```bash
-cp .skhdrc ~/
-brew services restart skhd
+cp ./configs/* ~/ && brew services restart skhd
 ```
 
 ## Karabiner-Elements
