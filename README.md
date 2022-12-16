@@ -3,7 +3,7 @@
 ## copy configs
 
 ```bash
-cp ./configs/* ~/
+cp -r ./configs/ ~/
 ```
 
 ## .zsh
@@ -29,13 +29,13 @@ cp ./vscode_settings/settings.json ~/Library/Application\ Support/Code/User/
 ## yabai
 
 ```bash
-cp ./configs/* ~/ && brew services restart yabai
+cp -r ./configs/ ~/ && brew services restart yabai
 ```
 
 ## skhd
 
 ```bash
-cp ./configs/* ~/ && brew services restart skhd
+cp -r ./configs/ ~/ && brew services restart skhd
 ```
 
 ## Karabiner-Elements
@@ -43,7 +43,7 @@ cp ./configs/* ~/ && brew services restart skhd
 - [公式サイト](https://karabiner-elements.pqrs.org/)からダウンロード、インストールする
 
 ```bash
-cp ./karabiner/* ~/.config/karabiner/assets/complex_modifications/
+cp -r ./karabiner/ ~/.config/karabiner/assets/complex_modifications/
 ```
 
 - HHKBのFnキーが上書きされるのを防止

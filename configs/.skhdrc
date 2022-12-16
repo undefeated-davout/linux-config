@@ -48,14 +48,14 @@ shift + alt - 2 : yabai -m window --swap --display 3; yabai -m display --focus 3
 shift + alt - 3 : yabai -m window --swap --display 2; yabai -m display --focus 2
 
 # サイズ調整
-shift + ctrl - up    : yabai -m window --resize top:0:-100   || yabai -m window --resize bottom:0:-100
-shift + ctrl - down  : yabai -m window --resize bottom:0:100 || yabai -m window --resize top:0:100
-shift + ctrl - left  : yabai -m window --resize left:-100:0  || yabai -m window --resize right:-100:0
-shift + ctrl - right : yabai -m window --resize right:100:0  || yabai -m window --resize left:100:0
-shift + ctrl - p     : yabai -m window --resize top:0:-100   || yabai -m window --resize bottom:0:-100
-shift + ctrl - n     : yabai -m window --resize bottom:0:100 || yabai -m window --resize top:0:100
-shift + ctrl - b     : yabai -m window --resize left:-100:0  || yabai -m window --resize right:-100:0
-shift + ctrl - f     : yabai -m window --resize right:100:0  || yabai -m window --resize left:100:0
+shift + ctrl - up    : yabai -m window --resize top:0:-200   || yabai -m window --resize bottom:0:-200
+shift + ctrl - down  : yabai -m window --resize bottom:0:200 || yabai -m window --resize top:0:200
+shift + ctrl - left  : yabai -m window --resize left:-200:0  || yabai -m window --resize right:-200:0
+shift + ctrl - right : yabai -m window --resize right:200:0  || yabai -m window --resize left:200:0
+shift + ctrl - p     : yabai -m window --resize top:0:-200   || yabai -m window --resize bottom:0:-200
+shift + ctrl - n     : yabai -m window --resize bottom:0:200 || yabai -m window --resize top:0:200
+shift + ctrl - b     : yabai -m window --resize left:-200:0  || yabai -m window --resize right:-200:0
+shift + ctrl - f     : yabai -m window --resize right:200:0  || yabai -m window --resize left:200:0
 
 # 時計回りに回転
 alt - r : yabai -m space --rotate 270
