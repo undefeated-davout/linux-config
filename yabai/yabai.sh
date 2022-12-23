@@ -2,7 +2,6 @@
 
 function countDown() {
   start=1
-  # end=10
   echo "please wait $end seconds"
   while [[ $start -lt $end ]]; do
     echo $(($end-$start))
@@ -10,10 +9,6 @@ function countDown() {
     start=$(($start+1))
   done
 }
-
-end=3
-echo "brew services restart yabai"
-brew services restart yabai
 
 end=7
 countDown
