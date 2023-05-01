@@ -12,5 +12,5 @@ function countDown() {
 
 end=7
 countDown
-echo "brew services restart yabai"
-brew services restart yabai
+echo "yabai --restart-service"
+yabai --restart-service

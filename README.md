@@ -29,13 +29,13 @@ cp ./vscode_settings/settings.json ~/Library/Application\ Support/Code/User/
 ## yabai
 
 ```bash
-cp -r ./configs/ ~/ && brew services restart yabai
+cp -r ./configs/ ~/ && yabai --restart-service
 ```
 
 ## skhd
 
 ```bash
-cp -r ./configs/ ~/ && brew services restart skhd
+cp -r ./configs/ ~/ && skhd --restart-service
 ```
 
 ## Karabiner-Elements
