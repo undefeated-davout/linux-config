@@ -1,5 +1,5 @@
 {
-  "title": "方向キー",
+  "title": "カスタムキーバインド",
   "rules": [
     {
       "description": "方向キー",
@@ -35,6 +35,19 @@
             "modifiers": { "mandatory": ["control"] }
           },
           "to": [{ "key_code": "right_arrow" }]
+        }
+      ]
+    },
+    {
+      "description": "一般",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "m",
+            "modifiers": { "mandatory": ["control"] }
+          },
+          "to": [{ "key_code": "return_or_enter" }]
         }
       ]
     }
