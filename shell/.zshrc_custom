@@ -5,9 +5,11 @@ source ~/data/repo/github.com/undefeated-davout/linux-config/shell/.bash_funcs
 source ~/data/repo/github.com/undefeated-davout/linux-config/shell/.bash_aliases
 
 # Git補完設定
-source /usr/local/Cellar/git/$GIT_VERSION/etc/bash_completion.d/git-prompt.sh
+#source /usr/local/Cellar/git/$GIT_VERSION/etc/bash_completion.d/git-prompt.sh
+source /opt/homebrew/Cellar/git/$GIT_VERSION/etc/bash_completion.d/git-prompt.sh
 fpath=(~/.zsh $fpath)
-zstyle ':completion:*:*:git:*' script /usr/local/Cellar/git/$GIT_VERSION/etc/bash_completion.d/git-completion.bash
+#zstyle ':completion:*:*:git:*' script /usr/local/Cellar/git/$GIT_VERSION/etc/bash_completion.d/git-completion.bash
+zstyle ':completion:*:*:git:*' script /opt/homebrew/Cellar/git/$GIT_VERSION/etc/bash_completion.d/git-completion.bash
 autoload -Uz compinit && compinit
 
 # プロンプトのオプション表示設定
@@ -48,7 +50,8 @@ if ! [ "$TMUX" = "" ]; then
 fi
 
 # zコマンド
-. /usr/local/etc/profile.d/z.sh
+#. /usr/local/etc/profile.d/z.sh
+. ~/apps/z/z.sh
 
 # fzf
 source ~/.fzf.zsh
