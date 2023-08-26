@@ -48,6 +48,20 @@
             "modifiers": { "mandatory": ["control"] }
           },
           "to": [{ "key_code": "return_or_enter" }]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "m",
+            "modifiers": {
+              "mandatory": ["control"],
+              "optional": ["shift"]
+            }
+          },
+          "to": [{
+            "key_code": "return_or_enter",
+            "modifiers": ["shift"]
+          }]
         }
       ]
     }
