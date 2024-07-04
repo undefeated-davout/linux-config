@@ -29,8 +29,8 @@ cmd + alt - f     : yabai -m window --warp east
 
 # 指定のディスプレイ番号へウィンドウを移動
 cmd + alt - 1 : yabai -m window --display 1; yabai -m display --focus 1
-cmd + alt - 2 : yabai -m window --display 2; yabai -m display --focus 2
-cmd + alt - 3 : yabai -m window --display 3; yabai -m display --focus 3
+cmd + alt - 2 : yabai -m window --display 3; yabai -m display --focus 3
+cmd + alt - 3 : yabai -m window --display 2; yabai -m display --focus 2
 
 # ディスプレイ内ウィンドウ入れ替え
 shift + alt - up    : yabai -m window --swap north
