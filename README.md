@@ -48,7 +48,7 @@ cp -r ./karabiner/ ~/.config/karabiner/assets/complex_modifications/
 
 - HHKBのFnキーが上書きされるのを防止
   - Karabiner-Elements > Function keys
-    - [Use all F1, F2, etc. keys as standard function keys]をONにする
+    - HHKB項目の各キーを対応するキーで明示的に指定する
 - Caps Lock→Control（Macの設定だけだと、KarabinerでのCtrl+○設定が効かない）
   - Simple Modifications > Apple Internal Keyboard
     - Add item: caps_lock → left_control
